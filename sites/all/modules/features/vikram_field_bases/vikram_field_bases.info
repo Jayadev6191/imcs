@@ -1,0 +1,9 @@
+name = Vikram Field Bases
+description = Fields added into Vikram Content Types
+core = 7.x
+package = 0N24
+version = 7.x-1.0
+project = vikram_field_bases
+features[features_api][] = api:2
+no autodetect = 1
+project path = sites/all/modules/features

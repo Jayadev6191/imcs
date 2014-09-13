@@ -1,0 +1,50 @@
+name = on24
+description = Based on starkish
+screenshot = images/screenshot.png
+core = "7.x"
+
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlight] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[page_bottom] = Page bottom
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = plugins/fancybox-v2.1.5.0/jquery.fancybox.css
+stylesheets[all][] = plugins/fancybox-v2.1.5.0/helpers/jquery.fancybox-buttons.css
+stylesheets[all][] = plugins/fancybox-v2.1.5.0/helpers/jquery.fancybox-thumbs.css
+stylesheets[all][] = http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css
+
+
+; Javascript
+;scripts[] = assets/javascripts/script.js
+;scripts[] = builderjs/builder.js
+
+scripts[] = builderjs/jquery.1.9.1.js
+scripts[] = builderjs/builderDrupal.js
+scripts[] = plugins/jquery.header.menu.1.0.0.js
+scripts[] = plugins/jquery.home.slider.1.0.0.js
+scripts[] = js/register.js
+;scripts[] = http://code.jquery.com/ui/1.11.0/jquery-ui.js
+
+;scripts[] = builderjs/node41.js
+
+;Add fancyBox
+scripts[] = plugins/fancybox-v2.1.5.0/jquery.fancybox.pack.js
+scripts[] = plugins/fancybox-v2.1.5.0/helpers/jquery.fancybox-buttons.js
+scripts[] = plugins/fancybox-v2.1.5.0/helpers/jquery.fancybox-media.js
+scripts[] = plugins/fancybox-v2.1.5.0/helpers/jquery.fancybox-thumbs.js

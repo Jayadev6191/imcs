@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vikram Web Link feature.
+ */
+
+include_once 'vikram_web_link.features.inc';

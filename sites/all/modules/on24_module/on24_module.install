@@ -1,0 +1,55 @@
+<?php
+
+function registration_schema(){
+	$schema['registration'] = array(
+  'description' => 'This is on24 user registration table',
+  'fields' => array(
+    'nid' => array(
+      'description' => 'Nid for user registration',
+      'type' => 'serial',
+      'not null' => TRUE,
+    ),
+    'mail' => array(
+      'description' => 'Unique string user identifier',
+      'type' => 'varchar',
+      'length' => '255',
+      'not null' => TRUE,
+    ),
+    
+    'name' => array(
+      'description' => 'full name of registered user',
+      'type' => 'varchar',
+      'length' => '255',
+      'not null' => TRUE,
+    ),
+    
+    'utm_src' => array(
+      'description' => 'utm_src of registered user',
+      'type' => 'varchar',
+      'length' => '255',
+      'not null' => TRUE,
+    ),
+    
+    'status' => array(
+      'description' => 'active or blocked state of rregistered user',
+      'type' => 'int',
+      'not null' => TRUE,
+    ),
+  ),
+  'primary key' => array('nid'),
+);
+
+	 return $schema;	
+}
+
+
+function registration_install() {
+  // Create my tables.
+  drupal_install_schema('registration');
+}
+function registration_uninstall() {
+  // Drop my tables.
+  drupal_uninstall_schema('registration');
+}
+
+?>

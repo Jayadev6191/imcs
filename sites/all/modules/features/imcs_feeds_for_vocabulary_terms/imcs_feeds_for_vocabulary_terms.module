@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IMCS Feeds for Vocabulary Terms feature.
+ */
+
+include_once 'imcs_feeds_for_vocabulary_terms.features.inc';

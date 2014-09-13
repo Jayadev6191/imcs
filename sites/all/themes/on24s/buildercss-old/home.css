@@ -1,0 +1,306 @@
+body,
+html {
+  margin: 0;
+  border: 0;
+  font-family: "Chalkboard" !important;
+  font-size: 14px;
+}
+a {
+  color: #cccccc;
+  text-decoration: underline;
+  font-weight: normal;
+  cursor: pointer;
+}
+a:hover {
+  color: #595c64;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+ul li a {
+  text-decoration: none;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal !important;
+}
+p,
+span {
+  color: #cccccc;
+}
+button {
+  cursor: pointer;
+  fornt-family: "";
+  background-image: none;
+}
+.clear {
+  clear: both;
+}
+*:focus {
+  outline: none;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+/*header */
+header {
+  background: -moz-linear-gradient(center top, #595c64, #1b1b1c) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  width: 1028px;
+  height: 65px;
+}
+header .header-container #ibm-logo {
+  height: 43px;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+header .header-container #smarter-logo {
+  width: 200px;
+  height: 43px;
+}
+header .header-container #nav-top-header {
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+header .header-container #nav-top-header li {
+  display: inline-block;
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+header .header-container #nav-top-header li a {
+  margin-right: 10px;
+}
+header #role-menu {
+  background-color: #ffffff;
+  left: 179px;
+  position: relative;
+  width: 200px;
+}
+header #role-menu a {
+  border: thin solid #cccccc;
+  display: block;
+  height: 25px;
+  max-width: 200px;
+  padding-left: 15px;
+}
+header #interest-menu {
+  background-color: #ffffff;
+  position: absolute;
+  top: 114px;
+  width: 200px;
+}
+header #interest-menu a {
+  border: thin solid #cccccc;
+  display: block;
+  height: 25px;
+  max-width: 200px;
+  padding-left: 15px;
+}
+header .sections-container {
+  background-color: #ffffff;
+  height: 55px;
+  border: thin solid #cccccc;
+}
+header .sections-container .section-item {
+  width: 175px;
+  height: 50px;
+  display: inline-block;
+  border-right: thin solid #cccccc;
+}
+header .sections-container .section-item a {
+  color: #595c64;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+header .sections-container .grid-item {
+  display: -moz-grid;
+}
+/*main-container*/
+.main-container {
+  margin: 0 auto;
+  width: 1028px;
+  margin-top: 50px;
+}
+.main-container .slider-categories-content {
+  height: 530px;
+  background-color: #1b1b1c;
+}
+.main-container .slider-categories-content a {
+  color: #595c64;
+  display: block;
+  font-size: 30px;
+  padding-top: 250px;
+  text-align: center;
+}
+.main-container .slider-categories-menu .categories-menu-item {
+  width: 165px;
+  height: 60px;
+  display: -moz-stack;
+  margin: 0;
+  border: thin solid #cccccc;
+  display: inline-flex;
+}
+.main-container .slider-categories-menu .categories-menu-item a {
+  color: #595c64;
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-container .featured-content-container {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: thin solid #595c64;
+  border-left: thin solid #595c64;
+  border-bottom: thin solid #595c64;
+  min-height: 400px;
+}
+.main-container .featured-content-container #filters-content .filter-content {
+  height: 30px;
+  width: 210px;
+  color: #595c64;
+}
+.main-container .featured-content-container .search-featured-content {
+  width: 240px;
+  height: 30px;
+}
+.main-container .featured-content-container #featured-content-repeater {
+  margin-top: 20px;
+  background-color: #ffffff;
+  display: inline-table;
+  widows: 1000px;
+  margin-top: 40px;
+}
+.main-container .content-item {
+  width: 325px;
+  height: 450px;
+  position: relative;
+  display: inherit;
+  border: thin solid #595c64;
+}
+.main-container .content-item p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-container .content-item .asset-type-label {
+  position: absolute;
+  top: 25px;
+  color: #595c64;
+  font-size: 16px;
+  left: 10px;
+}
+.main-container .content-item .title-label {
+  height: 45px;
+  overflow: hidden;
+  color: #1b1b1c;
+  font-size: 18px;
+}
+.main-container .content-item .abstract-label {
+  margin-top: 25px;
+  color: #1b1b1c;
+  font-size: 14px;
+  height: 160px;
+  overflow: hidden;
+}
+.main-container .content-item .link-label {
+  padding-left: 20px;
+}
+.main-container .content-item .social-link-container {
+  text-align: center;
+  margin-top: 25px;
+}
+.main-container #single-content-container {
+  display: inline-flex;
+  width: 1028px;
+}
+.main-container #single-content-container .single-content-item {
+  min-height: 600px;
+  width: 680px;
+}
+.main-container #single-content-container .single-content-item .img-container {
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 660px;
+  margin-bottom: 0px;
+}
+.main-container #single-content-container .single-content-item .img-container img {
+  width: 260px;
+  height: 100px;
+}
+.main-container #single-content-container .single-content-item span {
+  color: #595c64;
+}
+.main-container #single-content-container .single-content-item p {
+  padding-left: 20px;
+}
+.main-container #single-content-container .single-content-item p.title-label {
+  font-size: 22px;
+  font-weight: bold;
+}
+.main-container #single-content-container .single-content-item p.abstract-label {
+  font-size: 16px;
+  margin-top: 50px;
+}
+.main-container #single-content-container .single-content-item p.teaser-label {
+  font-size: 14px;
+  margin-top: 50px;
+}
+.main-container #single-content-container .single-content-item .content-info {
+  margin-top: 20px;
+  width: 660px;
+  min-height: 200px;
+}
+.main-container #single-content-container .single-content-item .content-info .login-section {
+  margin: 40px auto;
+  width: 660px;
+  text-align: center;
+}
+.main-container #single-content-container .single-content-item .content-info .login-section .link-label {
+  font-size: 14px;
+  color: #595c64;
+}
+.main-container #single-content-container .single-content-item .content-info .login-section .social-link-container {
+  margin-top: 20px;
+}
+.main-container #single-content-container .related-content-container {
+  width: 325px;
+  min-height: 600px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+footer {
+  margin: 5px auto;
+  width: 1028px;
+}
+footer #footer-container {
+  height: 230px;
+  background-color: #1b1b1c;
+}
+footer #footer-container a {
+  color: #595c64;
+  display: block;
+  font-size: 30px;
+  padding-top: 110px;
+  text-align: center;
+}

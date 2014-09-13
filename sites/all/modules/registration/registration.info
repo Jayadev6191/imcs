@@ -1,0 +1,4 @@
+name = registration 
+description = The new custom registration page.
+core = 7.x
+configure = admin/config/content

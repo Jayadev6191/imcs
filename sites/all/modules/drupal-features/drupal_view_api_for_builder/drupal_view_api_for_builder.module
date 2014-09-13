@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal View API for Builder feature.
+ */
+
+include_once 'drupal_view_api_for_builder.features.inc';

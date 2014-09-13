@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vikram Document feature.
+ */
+
+include_once 'vikram_document.features.inc';

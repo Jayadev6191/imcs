@@ -1,0 +1,12 @@
+name = IMCS Feeds for Vocabulary Terms
+core = 7.x
+package = 0N24
+dependencies[] = ctools
+dependencies[] = feeds
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = imcs0828_term_interest_areas
+features[feeds_importer][] = imcs0828_term_tags
+features[feeds_importer][] = imcs_term_buyer_roles
+features[feeds_importer][] = imcs_term_ibm_solutions
+project path = sites/all/modules/features

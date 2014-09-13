@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vikram Video feature.
+ */
+
+include_once 'vikram_video.features.inc';

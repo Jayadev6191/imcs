@@ -1,0 +1,110 @@
+<?php
+
+ /*Implementing hook menu*/
+
+function registration_menu()
+{
+	$items['registration/user'] = array(
+    'title' => 'Registration Page',
+    'page callback'=>'drupal_get_form',
+	'page arguments'=>array('register_user_form'),
+	'access callback'=>'user_access',
+	'access arguments'=> array('access content'),
+	'type'=>MENU_CALLBACK,
+  );
+ 
+  return $items;
+}
+
+function register_user_form($form,&$form_state){
+	// print_r(path_to_theme());
+	// $results=db_query("SELECT {mail} FROM {users}")->fetchField();
+	$form=array();
+	
+		$form['text'] = array(
+		  '#type' => 'textfield',
+		  '#title' => t('textfield'),
+		  '#id'=>'reg',
+		);
+		
+	
+		$form['email'] = array(
+	      '#type' => 'textfield',
+	      '#required' => TRUE,
+	      '#title' => t('Email'),
+	      '#id'=>'email',
+		  '#required' => TRUE,
+	    );
+	
+		$form['firstName'] = array(
+	      '#type' => 'textfield',
+	      '#required' => TRUE,
+	      '#title' => t('First Name'),
+	      '#id'=>'fname',
+	    );
+		
+		$form['lastName'] = array(
+	      '#type' => 'textfield',
+	      '#required' => TRUE,
+	      '#title' => t('Last Name'),
+	      '#id'=>'lname',
+	    );
+	    
+		$form['utm_src'] = array(
+	      '#type' => 'textfield',
+	      '#id'=>'utm',
+	      '#title' => t('UTM_SRC'),
+	    );
+		
+		$form['status'] = array(
+	      '#type' => 'hidden',
+	      '#required' => TRUE,
+	      '#title' => t('status'),
+	      '#value'=>1,
+	    );
+		
+	    $form['submit'] = array(
+	      '#type' => 'submit', 
+	      '#value' => 'Sign In',
+	      '#id'=>'sub',
+	      '#prefix' => '<div class=submitDiv> ', 
+		 );
+		 
+		return $form;
+}
+
+function register_user_form_submit($form,&$form_state){
+	// var_dump($form);	
+	// $results=db_query("SELECT {name} FROM {users}")->fetchField();
+	// echo $results;
+	$fields=array(
+		'mail'=>$form_state['values']['email'],
+		'name'=>$form_state['values']['firstName'].' '.$form_state['values']['lastName'],
+		'utm_src'=>$form_state['values']['utm_src'],
+		'status'=>$form_state['values']['status'],
+	);
+	
+	
+	 $count = db_query('SELECT count(*) FROM {users} WHERE mail = :hook', array(':hook' => $form_state['values']['email']))->fetchField();
+	 if($count>0){
+	 	echo 'User email already exists';
+	 }
+	 else{
+	 	db_insert('users')->fields($fields)->execute();	
+		print_r(db_query('SELECT count* FROM {users} WHERE email = :hook', array(':hook' => $form_state['values']['email']))->fetchField()); 
+	 }
+	 
+	 // $count = db_query('SELECT count(*) FROM {registration} WHERE email = :hook', array(':hook' => $form_state['values']['email']))->fetchField();
+	 // echo $count;
+	 // db_insert('registration')->fields($fields)->execute();
+	 
+	 // if($count>0){
+	 	// db_update('registration')->fields($fields)->condition('mail',$form_state['values']['email'])->execute();
+	 // }
+	 // else{
+// 	 
+	 // }
+	// select (*)
+	// db_insert('users')->fields($fields)->execute();
+	// drupal_goto('<front>');
+}
